@@ -8,3 +8,6 @@ Built on docker desktop 3.4 using
 
 Run with:
 >docker run -d -p 8080:8080 pebble-fuji
+
+Access in a browser:
+>http://localhost:8080/pebble/
