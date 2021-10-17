@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER responsible-disclosure@pingidentity.com
+MAINTAINER richard@cardona.us
 EXPOSE 8080
 WORKDIR /root
 RUN apt update
