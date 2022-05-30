@@ -1,7 +1,7 @@
 # pebble
  Pebble Fuji docker image
 
-Built on docker desktop 3.4 using
+Re-built on docker desktop 4.8.2 using
 
 * >docker buildx create --use
 * >docker buildx build --platform linux/amd64,linux/arm64 -t pebble-fuji --push .
