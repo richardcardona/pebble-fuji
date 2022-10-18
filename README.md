@@ -11,3 +11,8 @@ Run with:
 
 Access in a browser:
 >http://localhost:8080/pebble/
+
+Source code available on the container filesystem at
+/root/pebble-2.6.4
+or from the source repository at:
+[https://sourceforge.net/projects/pebble/](https://sourceforge.net/projects/pebble/files/pebble/2.6.4/)
