@@ -1,5 +1,5 @@
 # pebble
- Pebble Fuji docker image
+ Pebble Fuji docker image, a target-rich web application for security reviews
 
 Re-built on docker desktop 4.15.0 using
 
@@ -7,9 +7,13 @@ Re-built on docker desktop 4.15.0 using
 * >docker buildx build --platform linux/amd64,linux/arm64 -t pebble-fuji --push .
 
 Run with:
->docker run -d -p 8080:8080 pebble-fuji
+>docker run -d -p 8080:8080 -p 8443:8443 pebble-fuji
 
-Access in a browser:
+***NEW!***
+Access in a browser (TLS-protected, accept warnings about the self-signed certificate)
+>https://localhost:8443/pebble/
+
+Access in a browser (insecure)
 >http://localhost:8080/pebble/
 
 Source code available on the container filesystem at

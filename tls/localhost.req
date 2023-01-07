@@ -1,0 +1,14 @@
+[req]
+distinguished_name = localhost
+x509_extensions = v3_req
+prompt = no
+[localhost]
+CN = localhost
+[v3_req]
+keyUsage = keyEncipherment, dataEncipherment, digitalSignature
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+[alt_names]
+DNS.1 = localhost
+DNS.2 = 127.0.0.1
+DNS.3 = ::1
