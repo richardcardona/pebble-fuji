@@ -13,7 +13,7 @@ Run with:
 Access in a browser (TLS-protected, accept warnings about the self-signed certificate)
 >https://localhost:8443/pebble/
 
-Access in a browser (insecure)
+Access in a browser (insecure, for debug-purposes only)
 >http://localhost:8080/pebble/
 
 Source code available on the container filesystem at
