@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER richard@cardona.us
+LABEL maintainer="Richard Cardona <richard@cardona.us>"
 EXPOSE 8080
 EXPOSE 8443
 WORKDIR /root
@@ -11,4 +11,4 @@ RUN tar xfz apache-tomcat-6.0.53.tar.gz
 COPY tls apache-tomcat-6.0.53/conf/tls/
 RUN unzip -p pebble-2.6.4.zip pebble-2.6.4/./pebble-2.6.4.war > apache-tomcat-6.0.53/webapps/pebble.war
 ADD --chown=root:root start-pebble-app.sh /root
-CMD /root/start-pebble-app.sh
+ENTRYPOINT ["/root/start-pebble-app.sh"]

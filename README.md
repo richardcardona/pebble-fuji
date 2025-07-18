@@ -1,7 +1,7 @@
 # pebble
  Pebble Fuji docker image, a target-rich web application for security reviews
 
-Re-built on docker desktop 4.27.1 using
+Re-built on docker desktop 4.43.2 using
 
 * >docker buildx create --use
 * >docker buildx build --platform linux/amd64,linux/arm64 -t pebble-fuji --push .
